@@ -112,25 +112,92 @@ if(!$page){$page = 1;}
 													<li>
 														<a href="#">CP Plus</a>
 														<ul>
-															<li><a href="?comapny=CP_Plus&&category=HD_Cam">HD Cam</a></li>
-															<li><a href="?comapny=CP_Plus&&category=IP_Cam">Ip Cam</a></li>
-															<li><a href="?comapny=CP_Plus&&category=PTZ">PTZ</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=HD_Cam">HD Cam</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=IP_Cam">Ip Cam</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=PTZ">PTZ</a></li>
 														</ul>
 													</li>
-													<li><a href="#">Dahua</a></li>
+													<li>
+														<a href="#">Dahua</a>
+														<ul>
+															<li><a href="products.php?company=Dahua&&category=ultra">Ultra Series</a></li>
+															<li><a href="products.php?company=Dahua&&category=pro">Pro Series</a></li>
+															<li><a href="products.php?company=Dahua&&category=light">Light Series</a></li>
+														</ul>													
+													</li>
 												</ul>
 											</li>
-											<li><a href="#">DVR</a></li>
-											<li><a href="#">NVR</a></li>
-											<li><a href="#">Cables</a></li>
+											<li>
+												<a href="#">DVR</a>
+												<ul>
+													<li>
+														<a href="#">CP Plus</a>
+														<ul>
+															<li><a href="products.php?company=CP_Plus&&category=4ch_dvr">4 CH DVR</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=8ch_dvr">8 CH DVR</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=16ch_dvr">16 CH DVR</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=24ch_dvr">24 CH DVR</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=32ch_dvr">32 CH DVR</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">Dahua</a>
+														<ul>
+															<li><a href="products.php?company=Dahua&&category=ultra_dvr">Ultra Series</a></li>
+															<li><a href="products.php?company=Dahua&&category=pro_dvr">Pro Series</a></li>
+															<li><a href="products.php?company=Dahua&&category=light_dvr">Light Series</a></li>
+														</ul>													
+													</li>
+												</ul>												
+											
+											</li>
+											<li>
+												<a href="#">NVR</a>
+												<ul>
+															<li><a href="products.php?company=CP_Plus&&category=4ch_nvr">4 CH NVR</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=8ch_nvr">8 CH NVR</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=16ch_nvr">16 CH NVR</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=24ch_nvr">24 CH NVR</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=32ch_nvr">32 CH NVR</a></li>
+												</ul>											
+											
+											</li>
+											<li><a href="downloads/brochure-01_paramount-brochure.pdf">Cables</a></li>
 											<li><a href="#">Elecronic Safes</a></li>
-											<li><a href="#">Video Phone Door</a></li>
+											<li>
+												<a href="#">Video Phone Door</a>
+												<ul>
+															<li><a href="products.php?company=CP_Plus&&category=villa">Villa</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=mvilla">Multi Villa</a></li>
+															<li><a href="products.php?company=CP_Plus&&category=apartment">Apartment</a></li>
+												</ul>												
+											</li>
 										</ul>
 									</li>
-									<li><a href="services_layout_2.html">Peripherals</a></li>
-									<li><a href="services_layout_3.html">Paints</a></li>
-									<li><a href="services_layout_3.html">Hardware</a></li>
-									<li><a href="services_layout_3.html">Cables</a></li>
+									<li>
+										<a href="services_layout_2.html">Peripherals</a>
+										<ul>
+															<li><a href="http://www.dlink.co.in/products/category/?cid=3">Dlink</a></li>
+															<li><a href="https://www.tp-link.com/no/products/list-9.html">TP-Link</a></li>
+															<li><a href="http://tendacn.com/en/service/download.html">Tenda</a></li>
+															<li><a href="https://www.seagate.com/in/en/internal-hard-drives/surveillance/)">Seagate</a></li>
+															<li><a href="https://storage.toshiba.com/consumer-hdd/internal">Toshiba</a></li>
+															<li><a href="https://www.iball.co.in/Category/Technology-Accessories/282">iBall</a></li>															
+										</ul>											
+									
+									</li>
+									<li>
+										<a href="#">Paints</a>
+										<ul>
+											<li><a href="https://www.jotun.com/in/en/b2c/products/">Jotun</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Hardware</a>
+										<ul>
+											<li><a href="http://www.fluke.com/fluke/inen/Products/">Fluke</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 							<li class="submenu">
@@ -263,7 +330,7 @@ if(!$page){$page = 1;}
                     
                     <div class="text-center">
                         <ul class="pagination">
-                            <li><a href="shop.php">First</a></li>
+                            <li><a href="products.php">First</a></li>
                             <li><a href="?page=1">1</a></li>
                             <li><a href="?page=2">2</a></li>
                             <li><a href="?page=3">3</a></li>
