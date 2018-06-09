@@ -6,7 +6,11 @@ $db_handle = new DBController();
 //----------------------------------- DATABASE CONFIG END ------------------------------------------------------
 
 $page = $_GET['page'];
+$company = $_GET['company'];
+$category = $_GET['category'];
 if(!$page){$page = 1;}
+if(!$company){$company = "default";}
+if(!$category){$category = "default";}
 
 ?>
 
@@ -259,7 +263,7 @@ if(!$page){$page = 1;}
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="results_shop">
-                                    The page <?php echo $page ?> of the results.
+                                    The page <?php echo $page ?> of <?php echo $company ?>/<?php echo $category ?> .
                                 </div>
                             </div>
                             <div class="col-xs-6">
@@ -276,7 +280,9 @@ if(!$page){$page = 1;}
                     
                         <div class="row">
 							<?php
-							$product_array = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC");
+							$product_array_temp = "SELECT * FROM tblproduct WHERE `category` LIKE '$category' AND `Company` LIKE '$company' ORDER BY id ASC";
+							$product_array = $db_handle->runQuery($product_array_temp);
+							
 							if (!empty($product_array)) { 
 								foreach($product_array as $key=>$value){
 							?>
@@ -447,6 +453,7 @@ if(!$page){$page = 1;}
 		<div id="copy">
 			<div class="container">
 				© Home Alarms 2018 - All rights reserved.
+
 			</div>
 		</div><!-- End copy -->
 	</footer><!-- End footer -->
