@@ -291,14 +291,19 @@ if(!$category){$category = "default";}
 								<div class="shop-item col-lg-4 col-md-6 col-sm-6">
 									<div class="inner-box">
 										<div class="image-box">
-											<figure class="image"><a href="<?php echo $product_array[$key]["product_link"]; ?>"><img src="<?php echo $product_array[$key]["image"]; ?>" alt=""></a></figure>
+											<figure class="image"><a href="shop-single.html"><img src="<?php echo $product_array[$key]["image"]; ?>" alt=""></a></figure>
 											<div class="item-options clearfix">
-												<a href="quotation.html" class="btn_shop"><span class="icon-basket"></span>
+												<a href="cart.html" class="btn_shop"><span class="icon-basket"></span>
 												<div class="tool-tip">
-													Request A Quote
+													Add to cart
 												</div>
 												</a>
-												<a href="<?php echo $product_array[$key]["product_link"]; ?>" class="btn_shop"><span class="icon-eye"></span>
+												<a href="shop-single.html" class="btn_shop"><span class="icon-heart-8"></span>
+												<div class="tool-tip">
+													Add to Fav
+												</div>
+												</a>
+												<a href="shop-single.html" class="btn_shop"><span class="icon-eye"></span>
 												<div class="tool-tip">
 													View
 												</div>
@@ -306,10 +311,12 @@ if(!$category){$category = "default";}
 											</div>
 										</div>
 										<div class="product_description">
-
-											<h3><a href="<?php echo $product_array[$key]["product_link"]; ?>"><?php echo $product_array[$key]["name"]; ?></a></h3>
+											<div class="rating">
+												<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+											</div>
+											<h3><a href="shop-single.html"><?php echo $product_array[$key]["name"]; ?></a></h3>
 											<div class="price">
-											<?php echo $product_array[$key]["price"]; ?>
+												<span class="offer">$20.00</span> $15.00
 											</div>
 										</div>
 									</div>
