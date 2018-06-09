@@ -303,7 +303,7 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 							?>
 
 								<!--Start Shop Item-->
-								<div class="shop-item col-lg-4 col-md-6 col-sm-6">
+								<div class="shop-item col-lg-3 col-md-3 col-sm-6">
 									<div class="inner-box">
 										<div class="image-box">
 											<figure class="image"><a href="<?php echo $product_array[$key]["product_link"]; ?>"><img src="<?php echo $product_array[$key]["image"]; ?>" width="400" height="485" alt=""></a></figure>
