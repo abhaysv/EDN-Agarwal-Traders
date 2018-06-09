@@ -356,67 +356,7 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
                 </div><!-- End row -->
             </div><!-- End col -->
             
-            <!--Sidebar-->
-            <div class="col-md-3">
-                <aside class="sidebar">
-					<div class="widget">
-						<div id="custom-search-input-shop">
-							<div class="input-group col-md-12">
-								<input type="text" class="form-control input-lg" placeholder="Search">
-								<span class="input-group-btn">
-									<button class="btn btn-info btn-lg" type="button">
-										<i class="icon-search-1"></i>
-									</button>
-								</span>
-							</div>
-						</div>
-					</div><!-- End Search -->
-					<hr>
-					<div class="widget" id="cat_shop">
-						<h4>Categories</h4>
-						<ul>
-							<li><a href="#">Motion sensors</a></li>
-							<li><a href="#">Video Surveillance</a></li>
-							<li><a href="#">Mobile App</a></li>
-							<li><a href="#">Domotic</a></li>
-						</ul>
-					</div><!-- End widget -->
-					<hr>
-					<div class="widget related-products add_bottom_30">
-						<h4>Top Related </h4>
-						<div class="post">
-							<figure class="post-thumb"><a href="#"><img src="img/products/thumb-1.jpg" alt=""></a></figure>
-							<h5><a href="#">Motion sensor</a></h5>
-							<div class="rating">
-								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
-							</div>
-							<div class="price">
-								$ 15.00
-							</div>
-						</div>
-						<div class="post">
-							<figure class="post-thumb"><a href="#"><img src="img/products/thumb-2.jpg" alt=""></a></figure>
-							<h5><a href="#">Siren</a></h5>
-							<div class="rating">
-								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
-							</div>
-							<div class="price">
-								$ 15.00
-							</div>
-						</div>
-						<div class="post">
-							<figure class="post-thumb"><a href="#"><img src="img/products/thumb-3.jpg" alt=""></a></figure>
-							<h5><a href="#">Smoke Sensor</a></h5>
-							<div class="rating">
-								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
-							</div>
-							<div class="price">
-								$ 15.00
-							</div>
-						</div>
-					</div>
-                </aside>
-            </div><!--/Sidebar-->
+            
         </div><!--/row-->
     </div><!--/container--> 
 			
