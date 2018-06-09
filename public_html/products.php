@@ -256,7 +256,7 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 	 <main>
         <div class="container margin_60_35">
     	<div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="shop-section">
                     
                     <div class="items-sorting">
