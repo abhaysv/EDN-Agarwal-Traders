@@ -1,11 +1,18 @@
 <?php
 class DBController {
-	private $host = "localhost";
-	private $user = "root";
-	private $password = "";
-	private $database = "blog_samples";
-	private $conn;
+//	private $host = "localhost";
+//	private $user = "root";
+//	private $password = "";
+//	private $database = "blog_samples";
+
 	
+	private $host = "136.0.111.24";
+	private $user = "agrawalt_website";
+	private $password = "wW2U#tXxYL}9";
+	private $database = "agrawalt_website";
+	private $conn;
+
+
 	function __construct() {
 		$this->conn = $this->connectDB();
 	}
