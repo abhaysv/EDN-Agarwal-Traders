@@ -100,7 +100,7 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 						</div>
 						<a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
 						<ul>
-							<li><a href="contacts.html"> Home Page </a></li>
+							<li><a href="index.html"> Home Page </a></li>
 							<li class="submenu">
 								<a href="javascript:void(0);" class="show-submenu"> Our Product Catelog<i class="icon-down-open-mini"></i></a>
 								<ul>
