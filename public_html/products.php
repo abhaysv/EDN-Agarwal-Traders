@@ -100,15 +100,15 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 						</div>
 						<a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
 						<ul>
-							<li><a href="contacts.html">Home Page</a></li>
+							<li><a href="contacts.html"> Home Page </a></li>
 							<li class="submenu">
-								<a href="javascript:void(0);" class="show-submenu">Our products <i class="icon-down-open-mini"></i></a>
+								<a href="javascript:void(0);" class="show-submenu"> Our Product Catelog<i class="icon-down-open-mini"></i></a>
 								<ul>
 									<li>
-										<a href="#">Security Surveillance</a>
+										<a href="#">Security&nbsp; Surveillance</a>
 										<ul>
 											<li>
-												<a href="#">CCTV</a>
+												<a href="#"> CCTV </a>
 												<ul>
 													<li>
 														<a href="#">CP Plus</a>
@@ -202,9 +202,9 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 								</ul>
 							</li>
 
-							<li><a href="quotation.html">Request A Quote</a></li>
-							<li><a href="about.html">About us</a></li>
-							<li><a href="contacts.html">Contact us</a></li>
+							<li><a href="quotation.html"> Request A Quote </a></li>
+							<li><a href="about.html"> About us </a></li>
+							<li><a href="contacts.html"> Contact us</a></li>
 						</ul>
 					</div><!-- End main-menu -->
 				</nav>
