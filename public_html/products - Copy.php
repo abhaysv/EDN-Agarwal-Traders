@@ -25,7 +25,7 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="HOMEALARMS - Alarms and security systems site template">
 	<meta name="author" content="Ansonika">
-	<title><?php echo $category; ?></title>
+	<title>HOMEALARMS - Alarms and security systems site template</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -100,15 +100,18 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 						</div>
 						<a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
 						<ul>
-							<li><a href="index.html"> Home Page </a></li>
 							<li class="submenu">
-								<a href="javascript:void(0);" class="show-submenu"> Our Product Catelog<i class="icon-down-open-mini"></i></a>
+								<a href="javascript:void(0);" class="show-submenu">Home <i class="icon-down-open-mini"></i></a>
+
+							</li>
+							<li class="submenu">
+								<a href="javascript:void(0);" class="show-submenu">Our products <i class="icon-down-open-mini"></i></a>
 								<ul>
 									<li>
-										<a href="#">Security&nbsp; Surveillance</a>
+										<a href="#">Security Surveillance</a>
 										<ul>
 											<li>
-												<a href="#"> CCTV </a>
+												<a href="#">CCTV</a>
 												<ul>
 													<li>
 														<a href="#">CP Plus</a>
@@ -201,22 +204,50 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 									</li>
 								</ul>
 							</li>
-
-							<li><a href="quotation.html"> Request A Quote </a></li>
-							<li><a href="about.html"> About us </a></li>
-							<li><a href="contacts.html"> Contact us</a></li>
+							<li class="submenu">
+								<a href="javascript:void(0);" class="show-submenu">Request Quotation <i class="icon-down-open-mini"></i></a>
+								<ul>
+									<li><a href="quotation.html">Working quotation</a></li>
+									<li><a href="quotation_wizard.html">Working quotation wizard</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">About us</a></li>
+                            <li class="submenu">
+								<a href="javascript:void(0);" class="show-submenu">Shop <i class="icon-down-open-mini"></i></a>
+								<ul>
+									<li><a href="shop.html">Shop list</a></li>
+									<li><a href="shop-single.html">Shop product</a></li>
+									<li><a href="cart.html">Shop cart</a></li>
+									<li><a href="checkout.html">Shop checkout</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="javascript:void(0);" class="show-submenu">Tips and Faq <i class="icon-down-open-mini"></i></a>
+								<ul>
+									<li><a href="tips.html">Tips and Faq</a></li>
+									<li><a href="accessories.html">Accessories</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="blog_post.html">Blog post</a></li>
+									<li><a href="coming_soon/index.html">Coming soon</a></li>
+									<li><a href="shortcodes.html">Shortcodes</a></li>
+									<li><a href="icon_pack_1.html">Icon Pack 1</a></li>
+									<li><a href="icon_pack_2.html">Icon Pack 2</a></li>
+								</ul>
+							</li>
+							<li><a href="contacts.html">Contact us</a></li>
 						</ul>
 					</div><!-- End main-menu -->
 				</nav>
 			</div>
 		</div><!-- container -->
 	</header>
+	
 	<!-- End Header -->
 	
 	<section class="parallax_window_in short" data-parallax="scroll" data-image-src="img/subheader_in_2.jpg" data-natural-width="1400" data-natural-height="350">
 		<div id="sub_content_in">
 			<div class="container">
-				<h1><?php echo $category; ?></h1>
+				<h1>Shop</h1>
 				<p>"See our vast catelog of products"</p>
 			</div>
 		</div>
@@ -225,7 +256,7 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 	 <main>
         <div class="container margin_60_35">
     	<div class="row">
-            <div class="col-md-12">
+            <div class="col-md-9">
                 <div class="shop-section">
                     
                     <div class="items-sorting">
@@ -272,7 +303,7 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 							?>
 
 								<!--Start Shop Item-->
-								<div class="shop-item col-lg-3 col-md-3 col-sm-6">
+								<div class="shop-item col-lg-4 col-md-6 col-sm-6">
 									<div class="inner-box">
 										<div class="image-box">
 											<figure class="image"><a href="<?php echo $product_array[$key]["product_link"]; ?>"><img src="<?php echo $product_array[$key]["image"]; ?>" width="400" height="485" alt=""></a></figure>
@@ -325,7 +356,67 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
                 </div><!-- End row -->
             </div><!-- End col -->
             
-            
+            <!--Sidebar-->
+            <div class="col-md-3">
+                <aside class="sidebar">
+					<div class="widget">
+						<div id="custom-search-input-shop">
+							<div class="input-group col-md-12">
+								<input type="text" class="form-control input-lg" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn btn-info btn-lg" type="button">
+										<i class="icon-search-1"></i>
+									</button>
+								</span>
+							</div>
+						</div>
+					</div><!-- End Search -->
+					<hr>
+					<div class="widget" id="cat_shop">
+						<h4>Categories</h4>
+						<ul>
+							<li><a href="#">Motion sensors</a></li>
+							<li><a href="#">Video Surveillance</a></li>
+							<li><a href="#">Mobile App</a></li>
+							<li><a href="#">Domotic</a></li>
+						</ul>
+					</div><!-- End widget -->
+					<hr>
+					<div class="widget related-products add_bottom_30">
+						<h4>Top Related </h4>
+						<div class="post">
+							<figure class="post-thumb"><a href="#"><img src="img/products/thumb-1.jpg" alt=""></a></figure>
+							<h5><a href="#">Motion sensor</a></h5>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div>
+							<div class="price">
+								$ 15.00
+							</div>
+						</div>
+						<div class="post">
+							<figure class="post-thumb"><a href="#"><img src="img/products/thumb-2.jpg" alt=""></a></figure>
+							<h5><a href="#">Siren</a></h5>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div>
+							<div class="price">
+								$ 15.00
+							</div>
+						</div>
+						<div class="post">
+							<figure class="post-thumb"><a href="#"><img src="img/products/thumb-3.jpg" alt=""></a></figure>
+							<h5><a href="#">Smoke Sensor</a></h5>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div>
+							<div class="price">
+								$ 15.00
+							</div>
+						</div>
+					</div>
+                </aside>
+            </div><!--/Sidebar-->
         </div><!--/row-->
     </div><!--/container--> 
 			
@@ -336,44 +427,44 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 			<div class="row ">
 				<div class="col-md-4 col-sm-6">
 					<img src="img/logo-footer.png" width="190" height="44" alt="Home Alarms" data-retina="true" id="logo_footer">
-					<p>Agrawal Traders is the GOTO company since 2007 is in the field of Digital Security Surveillance ,Safety Materials , Industrial Paints , Hardware and Cables.</p>
+					<p>Id pri consul aeterno petentium. Vivendo abhorreant et vim, et quot persecuti mel. Libris hendrerit ex sea. Duo legere evertitur an, pri hinc doctus definitiones an, vix id dicam putent. Ius ornatus instructior in.</p>
 				</div>
 				<div class="col-md-3 col-md-offset-1 col-sm-3">
 					<h3>Discover</h3>
 					<ul>
-						<li><a href="index.html">Home Page</a></li>
-						<li><a href="about.html">About US</a></li>
-						<li><a href="contacts.html">Contact US</a></li>
-						<li><a href="quotation.html">Get Quote</a></li>
-						
+						<li><a href="#0">About us</a></li>
+						<li><a href="#0">FAQ</a></li>
+						<li><a href="#0">Quotation</a></li>
+						<li><a href="#0">Contacts</a></li>
+						<li><a href="#0">Shop</a></li>
+						<li><a href="#0">Terms and condition</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 col-sm-3" id="contact_bg">
 					<h3>Contacts</h3>
 					<ul id="contact_details_footer">
-						<li id="address_footer">Ramkund, Raipur, Chhattisgarh - 492001<br>India</li>
-						<li id="phone_footer"><a href="tel://918839642405">+91 8839642405 </a> / <a href="tel://918050000804">+91 8050000804 </a></li>
-						<li id="email_footer"><a href="mailto:agrawaltraders@hotmail.com">agrawaltraders@hotmail.com</a></li>
+						<li id="address_footer">4 West 31st Street New York, New York - 10001<br>United States</li>
+						<li id="phone_footer"><a href="tel://004542344599">+45 423 445 99</a> / <a href="tel://004542344599">+45 423 445 99</a></li>
+						<li id="email_footer"><a href="#0"><span class="__cf_email__" data-cfemail="bed7d0d8d1fed6d1d3dbdfd2dfccd3cd90ddd1d3">[email&#160;protected]</span></a></li>
 					</ul>
 				</div>
 			</div><!-- End row -->	
 			<div id="social_footer">
 				<ul>
-					<li><a href="https://www.facebook.com/agrawaltraders71/"><i class="icon-facebook"></i></a></li>
-					<li><a href="https://www.instagram.com/agrawaltraders/"><i class="icon-instagram"></i></a></li>
+					<li><a href="#0"><i class="icon-facebook"></i></a></li>
+					<li><a href="#0"><i class="icon-twitter"></i></a></li>
+					<li><a href="#0"><i class="icon-google"></i></a></li>
+					<li><a href="#0"><i class="icon-vimeo"></i></a></li>
 				</ul>
 			</div>
 		</div><!-- End container -->
 		<div id="copy">
 			<div class="container">
-				© Agarwal Traders 2018 - All rights reserved.
-				&emsp;&emsp;&emsp;
-				Powered By <a href="https://extreme-webhost.com">Extreme Digital Networks</a>
+				© Home Alarms 2018 - All rights reserved.
+
 			</div>
 		</div><!-- End copy -->
-	</footer>
-	
-	<!-- End footer -->
+	</footer><!-- End footer -->
 
 	<div id="toTop"></div><!-- Back to top button -->
 
