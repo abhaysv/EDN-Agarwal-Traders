@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="HOMEALARMS - Alarms and security systems site template">
 	<meta name="author" content="Ansonika">
-	<title>HOMEALARMS - Alarms and security systems site template</title>
+	<title>Contact Us</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -208,7 +208,9 @@
                 
             <div class="col-md-9">
                 	
-              <!-- <div id="map"></div> --><!-- end map-->
+               <!-- <div id="map"></div> -->
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14874.431559332807!2d81.615419!3d21.247392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a3ac90bcc0e0722!2sAGRAWAL+TRADERS%2C+RAIPUR!5e0!3m2!1sen!2sin!4v1528991392165" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+               
               
                <hr>
                     
@@ -344,9 +346,18 @@
 	<script src="js/functions.js"></script>
 
 	<!-- GOOGLE MAP -->
+ <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA8FM74YaN6YsOAGBoBix2zb4M-D_Wr9o4"></script>
-	<script type="text/javascript" src="js/mapmarker.jquery.js"></script>
-	<script type="text/javascript" src="js/mapmarker_func.jquery.js"></script>
+<!-- 	<script type="text/javascript" src="js/mapmarker.jquery.js"></script>
+	<script type="text/javascript" src="js/mapmarker_func.jquery.js"></script> -->
 
 	<!-- Form validation -->
 	<script src="assets/validate.js"></script>
