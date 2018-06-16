@@ -73,7 +73,7 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 hidden-xs">
-						<span id="tag_line">"Authorized Distributer Of CP Plus & Ajhua"</span>
+						<span id="tag_line">"Authorized Distributer Of CP Plus & Dahua"</span>
 					</div>
 					<div class="col-sm-8">
 						<ul id="top_links">
