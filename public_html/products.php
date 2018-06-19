@@ -204,6 +204,8 @@ if (isset($_GET['category'])) { $category = $_GET['category'];} else $category =
 
 							<li><a href="quotation.html"> Request A Quote </a></li>
 							<li><a href="about.html"> About us </a></li>
+							<li><a href="associates.html"> Associates</a></li>
+							<li><a href="clientele.html"> Clientele</a></li>
 							<li><a href="contacts.html"> Contact us</a></li>
 						</ul>
 					</div><!-- End main-menu -->
